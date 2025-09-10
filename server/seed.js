@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
 const Configuration = require('./models/Configuration');
+const dotenv = require('dotenv');
 
-// MongoDB Connection
-const MONGODB_URI = 'mongodb+srv://development:X3TcC8tKnI5JINuR@betalive.9sakb.gcp.mongodb.net/database';
+// Load environment variables
+dotenv.config();
+
+// MongoDB Connection will use process.env.MONGODB_URI
 
 // Sample configuration data
 const sampleConfigurations = [
@@ -27,7 +30,7 @@ const sampleConfigurations = [
 ];
 
 // Connect to MongoDB
-mongoose.connect(MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI)
   .then(async () => {
     console.log('MongoDB connected successfully');
     
