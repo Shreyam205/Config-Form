@@ -104,3 +104,8 @@ The seed script creates two sample configurations with the following IDs:
 
 You can use these IDs to test the API endpoints.
 
+## UI
+
+<h1>
+  <img src="/Media/React App - Google Chrome 2025-09-10 22-07-02 (online-video-cutter.com) (1).gif" alt="">
+</h1>
